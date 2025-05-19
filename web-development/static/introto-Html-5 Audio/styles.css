@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    background-color:#000000; 
+    text-align: center;
+    padding: 15px
+}
+.podcast-heading{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+
+}
+.card-container{
+    border-radius: 20px;
+    background-color: white;
+    height: 40vh;
+    margin: 4ex;
+}
+.tech-talk-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+}
+.features-heading{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+ }
+ .sarah-card{
+    height: 18vh;
+    width: 35vw;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;;
+
+ }
+ .img{
+    width: 100%;
+    height: 100px;
+ }
+ .cards-container{
+    display: flex;
+    flex-direction: row;
+
+ }

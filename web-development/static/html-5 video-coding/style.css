@@ -1,0 +1,49 @@
+.main-video-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #1a1a2e;
+    padding: 15px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*{
+    color: white;
+}
+.video-containers{
+    display: flex;
+}
+.video-heading{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.video-description{
+    margin-bottom: 20px;
+}
+.video-card{
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+.card-1{
+    width: 150px;
+    height: 100px;
+
+}
+.views{
+    margin-top: 10px;
+    color: black;
+
+}
+.city{
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+}

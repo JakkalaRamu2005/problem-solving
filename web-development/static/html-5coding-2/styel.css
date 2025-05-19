@@ -1,0 +1,49 @@
+.main-heading {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: "Arial", sans-serif;
+    background-color: black;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card {
+    height: 150px;
+    width: 100px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 10px;
+}
+.audio-container{
+    height: 200px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+.audio-heading{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #000;
+}
+.audio-description{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #000;
+}

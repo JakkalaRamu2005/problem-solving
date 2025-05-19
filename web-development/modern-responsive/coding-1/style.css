@@ -1,0 +1,42 @@
+.nature-bg-container {
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/nature-gallery-bg.png");
+    height: 100vh;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nature-heading {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    height: 40vh;
+    max-width: 40vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+}
+.img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin: 0 10px;
+    border-radius: 10px;
+}
