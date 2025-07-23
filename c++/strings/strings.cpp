@@ -12,6 +12,11 @@ int main(){
 
     cout << str.find('u') << endl; // returns the first occurrence of the char or word
 
-    
+    if(str.find('z')==string::npos){
+        cout << "not found" << endl;
+    }
+    cout << str.substr(0,4) << endl;
+    cout << str << endl;
 
+return 0;
 }
