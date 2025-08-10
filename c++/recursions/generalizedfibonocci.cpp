@@ -1,23 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> generateGeneralizedFibonacci(int k, vector<int>& start, int n) {
+
+class solution {
+    public:
+    vector<int> generateGeneralizedFibonacci(int k, vector<int>& start, int n) {
         // Code Here
-        
-        
-        // if(k==n){
-        //     return;
-        // }
-        for(int i=0; i<k; i++){
+       
+        for(int i=start.size(); i<n; i++){
             int num=0;
-            for(int j=0; j<i+k; j++){
-                int num+=start[i];
+            for(int j=0;j<k; j++){
+                num+=start[i-k+j];
             }
-            cout << num;
+            start.push_back(num);
         }
-        // generateGeneralizedFibonacci(k+1,vector<int>& start,n);
+        return start;                  
+        
          
     }
+};
 
 int main(){
     int k=3;
