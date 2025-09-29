@@ -5,7 +5,9 @@ int main(){
 
     string s;
     cin>> s;
-    cout << "Hello " << s  << endl;
+    cout << "Hello, " << s  << endl;
+
+    
 
 
 }
