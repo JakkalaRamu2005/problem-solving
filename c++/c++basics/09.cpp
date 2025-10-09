@@ -2,12 +2,13 @@
 using namespace std;
 
 int main(){
-
+    int num;
     do{
-
-    }while(n>0){
-        
-    }
+        cout << "Enter the input" << endl;
+        cin >> num;
+    }while(num<=0);
+        cout << num << endl;
+    
 
 
     return 0;
