@@ -3,37 +3,32 @@ using namespace std;
 
 
 
-bool kpalindromeString(string str, int k){
-    if(str.length()==k){
-        return true;
-    }
-    if(k>str.length()){
-        return false;
-    }
 
-    int arr[26]={0};
-    for(int i=0; i<str.length(); i++){
-        arr[str[i]-'a']+=1;
-    }
-    int count=0;
-    for(int i=0; i<26; i++){
-        if(arr[i]%2==1){
-            count+=1;
-        }
-    }
-
-   
-    return count <=k;
-}
 
 int main(){
 
 string str="banana";
 int k = 2;
-cout << kpalindromeString(str,k);
+
+if(s.length()<k){
+    cout << "false";
+}
+if(s.length()==k){
+    cout << "true";
+}
+int arr[26]={0};
+for(int i=0; i<s.size();i++){
+    arr[str[i]-'a']+=1;
+}
+int odd=0;
+
+
+for(int j: arr){
+    if(j%2==1){
+        odd+=1;
+    }
+}
+cout << odd<=k;
 return 0;
-
-
-
 
 }
