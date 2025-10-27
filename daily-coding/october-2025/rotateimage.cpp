@@ -1,4 +1,5 @@
-        int n = matrix.size();
+48. Rotate Image        
+int n = matrix.size();
 vector<vector<int>> matrix2(n, vector<int>(n));
 
 // matrix2(n, vector<int>(n));
