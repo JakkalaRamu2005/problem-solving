@@ -1,8 +1,9 @@
 
 
 // leetcodequestion: 204. Count Primes
+/* 
 
-
+*/
 class Solution {
 public:
     int countPrimes(int n) {
