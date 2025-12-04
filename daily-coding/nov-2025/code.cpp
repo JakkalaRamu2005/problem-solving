@@ -1,6 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
 int main(){
-    binarySearch()
+
+int n; 
+cout << n;
+
+
+
 }

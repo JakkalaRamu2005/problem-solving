@@ -1,0 +1,6 @@
+{
+    "code-runner.runInTerminal": false,
+    "code-runner.executorMap": {
+        "cpp": "g++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt < input.txt > output.txt"
+    }
+}
