@@ -3,6 +3,14 @@ using namespace std;
 
 int main() {
 	// your code goes here
+		/*
+We have a list of numbers.
+Some numbers repeat more times than others.
+First, we count how many times each number appears.
+Then we find which number appears the most times.
+Now, we add all the counts that are equal to this maximum count.
+Finally, we return that total.
+*/
 	
 	vector<int> nums={1,2,2,3,1,4};
 	map<int,int> freq;
