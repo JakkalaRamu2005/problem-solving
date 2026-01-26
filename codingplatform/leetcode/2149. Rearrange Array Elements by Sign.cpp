@@ -18,3 +18,28 @@ for(int i=0; i<mid; i++){
 return nums;
     }
 };
+
+
+//optimal solution  force solution
+
+class Solution {
+public:
+    vector<int> rearrangeArray(vector<int>& arr) {
+int n = arr.size();
+vector<int> ans(n,0);
+
+int pos=0;
+int neg=0;
+for(int i=0; i<n; i++){
+    if(arr[i]>=0){
+        
+        ans[2*pos]=arr[i];
+        pos++;
+    }else{
+        ans[(2*neg)+1]=arr[i];
+        neg++;
+    }
+}
+return ans;
+    }
+};
