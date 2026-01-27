@@ -13,9 +13,6 @@ public:
     
     
     while(ans.size()!=m*n){
-        
-        
-        
         ans.push_back(matrix[row][col]);
         matrix[row][col] = 10000;
         int next_row = row + row_delta[pos];
