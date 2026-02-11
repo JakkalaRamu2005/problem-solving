@@ -2,24 +2,38 @@
 using namespace std;
 
 int main() {
-	// your code goes here
 
-    int n;
-    cin >> n;
-    for(int i=0; i<n; i++){
-        int len;
-        cin >> len;
-        // cout << len << endl;
-        string first,second;
-        cin >> first >> second;
-        // cout << first << " " << second << endl;
-        sort(first.begin(),first.end());
-        sort(second.begin(),second.end());
-        
-        
-        if(first==second) cout << "YES" << endl;
-        else cout << "NO" << endl;
+int s,a,b,x; cin>>s>>a>>b>>x;
+int sum=0;
+while(x>0){
+    
+    if(x>0){
+        if(x>=a){
+           
+            sum+=s*a;
+             x-=a;
+        }else{
+            
+            sum+=x*s;
+            x = 0;
+            break;
+        }
     }
     
+    if(x>0){
+        if(x>=b){
+            x-=b;
+        }else{
+            x = 0;
+            break;
+        }
+    }
+    
+
+}
+
+cout << sum << endl;
+
+
 
 }

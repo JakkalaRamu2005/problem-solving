@@ -1,24 +1,34 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int main() {
-    int n, l, r;
-    cin >> n >> l >> r;
-    string s;
-    cin >> s;
-    bool condi = true;
+	// your code goes here
+	int n; cin>>n;
+	bool condi = true;
+	int co=0;
+	string result="";
+	for(int i=0; i<n; i++){
+	    char s; cin >> s;
+	    int len; cin>>len;
+	    
+	    co+=len;
+	    if(co<=100){
+	        for(int i=0; i<len; i++){
+	            result+=s;
+	            
+	        }
+	    }else{
+	        cout << "Too Long" << endl;
+	        condi = false;
+	        break;
+	    }
+	
+	}
+	if(condi){
+	   cout << result << endl;
+	}
 
-    for (int i = l; i < r; i++) {
-        if (s[i] != 'o') {
-            cout << "No" << endl;
-            condi = false;
-        }
-    }
+	
+	
 
-    if (condi) {
-        cout << "Yes" << endl;
-    }
-
-    return 0;
 }
