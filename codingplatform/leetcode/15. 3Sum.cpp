@@ -39,6 +39,62 @@ int main() {
     }
 
 }
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	vector<int> nums = {0,0,0};
+	
+	sort(nums.begin(),nums.end());
+	
+	
+	vector<vector<int>> result;
+	int n = nums.size();
+	
+	
+	for(int i=0; i<n; i++){
+	    if(i>0&&nums[i]==nums[i-1]) continue;
+	    int j = i+1;
+	    int k = n-1;
+	    
+	    while(j<k){
+	        int total = nums[i]+nums[j]+nums[k];
+	        if(total>0){
+	            k--;
+	        }else if(total<0){
+	            j++;
+	        }else{
+	            vector<int> temp = {nums[i],nums[j],nums[k]};
+	            result.push_back(temp);
+	            j++;
+	            k--;
+	            while(j<k&&nums[j-1]==nums[j]) j++;
+	            while(j<k&&nums[k]==nums[k+1]) k++;
+	        }
+	    }
+	    
+	}
+	
+	
+	for(int i=0; i<result.size(); i++){
+	    for(int j: result[i]){
+	        cout << j << " ";
+	    }
+	    cout << endl;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+
+}
 
 
 // n2 better solution for the same question.
